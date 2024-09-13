@@ -3,3 +3,61 @@
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+aside{
+    height: 700px;  
+    width: 25%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(5, 20%);
+    grid-template-areas: 'search search'
+    'lidos lidos'
+    'lidos lidos'
+    'cimae cimad'
+    'baixoe baixod';
+    border: 1px solid black;
+}
+.sec1{
+    grid-area: search;
+    width: 90%;
+    height: 60px;
+    margin-top: 50px;
+    margin-left: 5%;
+    border: 1px solid black;
+}
+.sec2{
+    grid-area: lidos;
+    width: 90%;
+    border: 1px solid black;
+    margin-left: 5%;
+    margin-bottom: 20px;
+
+}
+.sec3{
+    grid-area: cimae;
+    height: 130px;
+    width: 130px;
+    margin-left:20px;
+    border: 1px solid black;
+}
+.sec4{
+    grid-area: cimad;
+    height: 130px;
+    width: 130px;
+    border: 1px solid black;
+    margin-left: 5%;
+}
+.sec5{
+    grid-area: baixoe;
+    height: 130px;
+    width: 130px;
+    margin-left: 20px;
+    border: 1px solid black;
+}
+.sec6{
+    grid-area: baixod;
+    height: 130px;
+    width: 130px;
+    border: 1px solid black;
+    margin-left: 5%;
+}
