@@ -4,10 +4,13 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body {
-    height: 900px;
+    height: 2000px;
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: repeat(4, 25%);
     grid-template-areas: 'header header header'
     'article article aside'
     'article article aside'
-    'footer footer footer' ;
+    'footer footer footer';
 }
