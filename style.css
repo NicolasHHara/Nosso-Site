@@ -27,7 +27,23 @@ article {
     grid-template-areas: 'cima cima'  
    'baixoe baixod';
 }
-.sectioncima .secttitle {
+header {
+    grid-area: header;
+    background-color: brown;
+}
+footer {
+    margin-top: 20px;
+    grid-area:  footer;
+    background-color: coral;
+}
+#leia {
+    font-weight: bold;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 15px; 
+}
+.secttitle {
     height: 40px;
     background-color: black;
     padding-top: 10px;
@@ -35,7 +51,13 @@ article {
 .sectioncima .sub {
     color: white;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 30px;
+}
+.sectioncima .newton {
+    font-size: larger;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
 }
 .imgdestaques {
     float: left;
@@ -61,19 +83,86 @@ article {
 }
 .sectionbaixoe {
     grid-area: baixoe ;
-    background-color: blue;
+    background-color: darkslategrey;
     margin-right: 10px;
+}
+.sectionbaixoe h1 {
+    text-align: center;
+    height: 35px;
+    font-size: 25px;
+    color: white;
+}
+.sectionbaixoe h3 {
+    text-align: center;
+    height: 35px;
+    font-size: 20px;
+    color: white;
+}
+.sectionbaixoe .sub {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+.sectionbaixoe p {
+    color: white;
+    margin-left: 10%;
+    margin-top: 5px;
+}
+.sectionbaixoe .ex {
+    width: 80%;
+    height: 30px;
+    background-color: black;
+    padding-top: 5px;
+    margin-right: 7%;
+    margin-top: 10px;
+    float: right;
+}
+.sectionbaixoe ul {
+    float: left;
+    color: white;
+    margin-left: 15%;
+    margin-top: 10px;
+    font-size: larger;
+}
+.sectionbaixod h1 {
+    text-align: center;
+    height: 35px;
+    font-size: 25px;
+    color: white;
+}
+.sectionbaixod .sub {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
 }
 .sectionbaixod {
     grid-area: baixod;
-    background-color: cadetblue;
+    background-color: darkslategrey
 }
-header {
-    grid-area: header;
-    background-color: brown;
+.sectionbaixod p {
+    color: white;
+    margin-left: 10%;
+    margin-top: 5px;
 }
-footer {
-    margin-top: 20px;
-    grid-area:  footer;
-    background-color: coral;
+.sectionbaixod ul {
+    float: left;
+    color: white;
+    margin-left: 15%;
+    margin-top: 10px;
+    font-size: larger;
+}
+.sectionbaixod h3 {
+    text-align: center;
+    height: 35px;
+    font-size: 20px;
+    color: white;
+}
+.sectionbaixod .ex {
+    width: 80%;
+    height: 30px;
+    background-color: black;
+    padding-top: 5px;
+    margin-right: 7%;
+    margin-top: 10px;
+    float: right;
 }
