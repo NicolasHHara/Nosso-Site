@@ -3,10 +3,24 @@
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-aside{
-    height: 700px;  
-    width: 25%;
+body {
+    height: 1500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: repeat(4, 25%);
+    grid-template-areas: 'header header header'
+    'article article aside'
+    'article article aside'
+    'footer footer footer';
+    grid-gap: 10px;
+}
+aside {
+    grid-area: aside;
+    background-color: aqua;
+}
+article {
+    grid-area: article;
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(5, 20%);
@@ -60,4 +74,9 @@ aside{
     width: 130px;
     border: 1px solid black;
     margin-left: 5%;
+}
+footer {
+    margin-top: 20px;
+    grid-area:  footer;
+    background-color: coral;
 }
