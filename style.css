@@ -27,9 +27,36 @@ article {
     grid-template-areas: 'cima cima'  
    'baixoe baixod';
 }
+.sectioncima .secttitle {
+    height: 40px;
+    background-color: black;
+    padding-top: 10px;
+}
+.sectioncima .sub {
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.imgdestaques {
+    float: left;
+    border: 1px solid black;
+    margin-left: 25px;
+    margin-top: 10px;
+    height: 275px;
+    width: 290px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sectioncima  h1 {
+    text-align: center;
+    height: 35px;
+    font-size: 25px;
+    color: white;
+}
 .sectioncima {
     grid-area: cima;
-    background-color: bisque;
+    background-color:darkslategrey;
     height: 360px;
 }
 .sectionbaixoe {
