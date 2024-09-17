@@ -15,15 +15,36 @@ body {
     'footer footer footer';
     grid-gap: 10px;
 }
-aside {
-    grid-area: aside;
-    background-color: aqua;
-}
 article {
     grid-area: article;
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(5, 20%);
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: 'cima cima'  
+   'baixoe baixod';
+}
+
+.sectioncima {
+    grid-area: cima;
+    background-color: bisque;
+    height: 360px;
+}
+.sectionbaixoe {
+    grid-area: baixoe ;
+    background-color: blue;
+    margin-right: 10px;
+}
+.sectionbaixod {
+    grid-area: baixod;
+    background-color: cadetblue;
+}
+
+aside {
+    display: grid;
+    grid-area: aside;
+    background-color: grey;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 20%);
     grid-template-areas: 'search search'
     'lidos lidos'
     'lidos lidos'
@@ -31,11 +52,28 @@ article {
     'baixoe baixod';
     border: 1px solid black;
 }
+
+.h27{
+    height: 45px;
+    padding-left: 30px;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: aliceblue;
+}
+ul{
+    margin-left: 35px;
+    margin-top: 20px;
+}
+li{
+    margin-top: 25px;
+    color: aliceblue;
+}
 .sec1{
     grid-area: search;
     width: 90%;
     height: 60px;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 5%;
     border: 1px solid black;
 }
@@ -45,38 +83,45 @@ article {
     border: 1px solid black;
     margin-left: 5%;
     margin-bottom: 20px;
-
+    height: 250px;
+    margin-top: -20px;
 }
 .sec3{
     grid-area: cimae;
-    height: 130px;
-    width: 130px;
-    margin-left:20px;
+    height: 150px;
+    width: 80%;
+    margin-left:10%;
     border: 1px solid black;
 }
 .sec4{
     grid-area: cimad;
-    height: 130px;
-    width: 130px;
+    height: 150px;
+    width: 80%;
     border: 1px solid black;
-    margin-left: 5%;
+    margin-left: 10%;
+    float: left;
 }
 .sec5{
     grid-area: baixoe;
-    height: 130px;
-    width: 130px;
-    margin-left: 20px;
+    height: 150px;
+    width: 80%;
+    margin-left: 10%;
     border: 1px solid black;
 }
 .sec6{
     grid-area: baixod;
-    height: 130px;
-    width: 130px;
+    height: 150px;
+    width: 80%;
     border: 1px solid black;
-    margin-left: 5%;
+    margin-left: 10%;
+}
+
+header {
+    grid-area: header;
+    background-color: brown;
 }
 footer {
     margin-top: 20px;
     grid-area:  footer;
     background-color: coral;
-}
+} 
