@@ -138,11 +138,168 @@ li{
 }
 
 header {
+    height: 300px;
     grid-area: header;
     background-color: brown;
+    background-image: url(https://www.shutterstock.com/shutterstock/videos/1102356493/thumb/11.jpg?ip=x480);
+}
+.titulo {
+    border-radius: 70% ;
+    box-shadow: 10px 5px 20px 1px black ;
+    margin-top: 7%;
+    margin-left: 35%;
+    text-align: center;
+    height: 180px;
+    width: 400px;
+    background-color: black;
+    color: white;
+    font-size: 100px;
+    text-shadow: 0 0 10px whitesmoke;
+    font-family: cursive;
+}
+.menu {
+    background-color: black;
+    color: whitesmoke;
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    vertical-align: middle;
+    font-weight: bold;
+    text-align: center;
 }
 footer {
     margin-top: 20px;
     grid-area:  footer;
     background-color: coral;
 } 
+
+#leia {
+    font-weight: bold;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 15px; 
+}
+.secttitle {
+    height: 40px;
+    background-color: black;
+    padding-top: 10px;
+}
+.sectioncima .sub {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+.sectioncima .newton {
+    font-size: larger;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+.imgdestaques {
+    float: left;
+    border: 1px solid black;
+    margin-left: 25px;
+    margin-top: 10px;
+    height: 275px;
+    width: 290px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f7/Portrait_of_Sir_Isaac_Newton%2C_1689_%28brightened%29.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sectioncima  h1 {
+    text-align: center;
+    height: 35px;
+    font-size: 25px;
+    color: white;
+}
+.sectioncima {
+    grid-area: cima;
+    background-color:darkslategrey;
+    height: 360px;
+}
+.sectionbaixoe {
+    grid-area: baixoe ;
+    background-color: darkslategrey;
+    margin-right: 10px;
+}
+.sectionbaixoe h1 {
+    text-align: center;
+    height: 35px;
+    font-size: 25px;
+    color: white;
+}
+.sectionbaixoe h3 {
+    text-align: center;
+    height: 35px;
+    font-size: 20px;
+    color: white;
+}
+.sectionbaixoe .sub {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+.sectionbaixoe p {
+    color: white;
+    margin-left: 10%;
+    margin-top: 5px;
+}
+.sectionbaixoe .ex {
+    width: 80%;
+    height: 30px;
+    background-color: black;
+    padding-top: 5px;
+    margin-right: 7%;
+    margin-top: 10px;
+    float: right;
+}
+.sectionbaixoe ul {
+    float: left;
+    color: white;
+    margin-left: 15%;
+    margin-top: 10px;
+    font-size: larger;
+}
+.sectionbaixod h1 {
+    text-align: center;
+    height: 35px;
+    font-size: 25px;
+    color: white;
+}
+.sectionbaixod .sub {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+.sectionbaixod {
+    grid-area: baixod;
+    background-color: darkslategrey
+}
+.sectionbaixod p {
+    color: white;
+    margin-left: 10%;
+    margin-top: 5px;
+}
+.sectionbaixod ul {
+    float: left;
+    color: white;
+    margin-left: 15%;
+    margin-top: 10px;
+    font-size: larger;
+}
+.sectionbaixod h3 {
+    text-align: center;
+    height: 35px;
+    font-size: 20px;
+    color: white;
+}
+.sectionbaixod .ex {
+    width: 80%;
+    height: 30px;
+    background-color: black;
+    padding-top: 5px;
+    margin-right: 7%;
+    margin-top: 10px;
+    float: right;
+}
